@@ -1,7 +1,7 @@
-package com.example.demo.Agendamento;
+package com.example.agendamentoapi.Agendamento;
 
-import com.example.demo.Cliente.ClienteModel;
-import com.example.demo.Servico.ServicoModel;
+import com.example.agendamentoapi.Cliente.ClienteModel;
+import com.example.agendamentoapi.Servico.ServicoModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

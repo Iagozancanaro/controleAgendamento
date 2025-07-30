@@ -1,4 +1,4 @@
-package com.example.demo.Agendamento;
+package com.example.agendamentoapi.Agendamento;
 
 public enum StatusAgendamento {
     AGENDADO,

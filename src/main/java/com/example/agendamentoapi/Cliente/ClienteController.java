@@ -1,15 +1,15 @@
-package com.example.demo.Servico;
+package com.example.agendamentoapi.Cliente;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/servico")
-public class ServicoController {
+@RequestMapping("/cliente")
+public class ClienteController {
 
     @GetMapping("/boasvindas")
     public String boasVindas() {
-        return "testando";
+        return "Outra msg de teste";
     }
 }

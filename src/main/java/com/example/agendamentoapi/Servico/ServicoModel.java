@@ -1,6 +1,6 @@
-package com.example.demo.Servico;
+package com.example.agendamentoapi.Servico;
 
-import com.example.demo.Agendamento.AgendamentoModel;
+import com.example.agendamentoapi.Agendamento.AgendamentoModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

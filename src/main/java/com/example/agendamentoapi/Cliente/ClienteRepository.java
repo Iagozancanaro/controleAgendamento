@@ -1,4 +1,4 @@
-package com.example.demo.Cliente;
+package com.example.agendamentoapi.Cliente;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
