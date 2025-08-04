@@ -32,7 +32,7 @@ public class ClienteService {
     public ClienteDTO criarCliente(ClienteDTO clienteDTO) {
 
         // essa verificação puxa o metodo criado no clienteRepository para validar aqui
-        if (clienteRepository.emailJaExiste(clienteDTO.getEmail())) {
+        if (clienteRepository.existsByEmail(clienteDTO.getEmail())) {
             System.out.println("Email ja cadastrado");
             return null;
         }
