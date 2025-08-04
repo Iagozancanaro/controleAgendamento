@@ -6,7 +6,6 @@ import com.example.agendamentoapi.Servico.ServicoModel;
 import com.example.agendamentoapi.Servico.ServicoRepository;
 import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
