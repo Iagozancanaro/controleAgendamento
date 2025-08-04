@@ -3,6 +3,7 @@ package com.example.agendamentoapi.Agendamento;
 
 import com.example.agendamentoapi.Cliente.ClienteModel;
 import com.example.agendamentoapi.Servico.ServicoModel;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +19,7 @@ public class AgendamentoDTO {
     private Long id;
     private ClienteModel cliente;
     private ServicoModel servico;
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime dataHora;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
