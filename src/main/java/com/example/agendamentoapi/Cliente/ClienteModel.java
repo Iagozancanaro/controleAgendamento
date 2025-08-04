@@ -1,6 +1,7 @@
 package com.example.agendamentoapi.Cliente;
 
 import com.example.agendamentoapi.Agendamento.AgendamentoModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,6 +32,7 @@ public class ClienteModel {
     private String telefone;
 
     @OneToMany(mappedBy = "cliente")
+    @JsonIgnore
     private List<AgendamentoModel> agendamentos;
 
 }

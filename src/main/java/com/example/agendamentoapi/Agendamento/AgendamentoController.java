@@ -83,4 +83,16 @@ public class AgendamentoController {
                     .body("Agendamento não encontrado ou ja cancelado/concluído");
         }
     }
+
+    @DeleteMapping("/deletar/{id}")
+    public ResponseEntity<String> deletarAgendamento(@PathVariable Long id) {
+        if (agendamentoService.buscarPorId(id) != null) {
+            agendamentoService.deletarAgendamento(id);
+            return ResponseEntity.ok("Agendamento com o ID " + id + " deletado com sucesso");
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("O agendamento com o ID " + id + " não foi encontrado");
+        }
+    }
+
 }

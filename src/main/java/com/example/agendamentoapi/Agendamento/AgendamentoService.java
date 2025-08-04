@@ -161,4 +161,10 @@ public class AgendamentoService {
         return agendamentoMapper.map(agendamentoSalvo);
 
     }
+
+    public void deletarAgendamento(Long id) {
+        if (agendamentoRepository.existsById(id)) {
+            agendamentoRepository.deleteById(id);
+        }
+    }
 }
