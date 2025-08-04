@@ -1,6 +1,7 @@
 package com.example.agendamentoapi.Servico;
 
 import com.example.agendamentoapi.Agendamento.AgendamentoModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,6 +30,7 @@ public class ServicoModel {
     private BigDecimal preco;
 
     @OneToMany(mappedBy = "servico")
+    @JsonIgnore
     private List<AgendamentoModel> agendamentos;
 
 }
