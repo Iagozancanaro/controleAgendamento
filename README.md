@@ -1,10 +1,5 @@
 # API de Agendamentos - Spring Boot
 
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
-![Maven](https://img.shields.io/badge/Maven-blue)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
-
 Este projeto é uma **API REST** desenvolvida em **Spring Boot** para gerenciar **agendamentos de serviços** como consultas ou atendimentos.  
 Ele foi criado como um desafio pessoal: anteriormente, durante meu curso, desenvolvi um projeto parecido com **duas entidades**, mas desta vez resolvi me desafiar e adicionar uma terceira entidade para lidar com um caso mais completo e realista.
 
